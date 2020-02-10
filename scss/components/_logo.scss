@@ -1,0 +1,16 @@
+  /* --------------- Start Component Logo ----------- */
+
+  .logo {
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    text-decoration: none; }
+
+    .logo {
+        &__image {
+            display: block;
+            height: 84px;
+        }
+    } 
+
+  /* --------------- End Component Logo ----------- */

@@ -1,0 +1,73 @@
+// Horizontal
+.topList {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    font: normal .8em/1 Arial, sans-serif;
+    height: 34px;
+
+    &__Item {
+        list-style: none;
+        margin-right: 20px;
+
+        &:hover {background: #cabdd7;}
+//        &:not(:last-child) {margin-right: 2em;}
+    }
+
+    &__Link {
+        padding: 10px 5px 0;
+        display: inline-block;
+        color: #f7f7f7;
+        text-decoration: none;
+        height: 100%;
+
+        &:focus {outline: none;}
+          
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+            background-color: #eeecec;
+            color: #462662;
+        }
+    }
+}
+  
+ 
+/* ********** Module Sticky Note ********** */
+
+.skipNav {
+    position: relative;
+
+    &__link {
+        position: absolute;
+        left: -99999px;
+        font: normal 1em/1.6 "Lucida Handwriting";
+        transform:rotate(4deg);
+        text-decoration: none;
+        height: 10em;
+        min-width: 10em;
+        max-width: 12em;
+        border:1px solid #E8E8E8;	
+        border-bottom-right-radius: 60px 5px;
+        box-shadow: 5px 5px 7px rgba(33,33,33,.7);  
+        background: antiquewhite url("../img/pin.jpg") top left / 40px no-repeat;
+        padding: 2em 12px 8px;
+        color: #444;
+
+        &:nth-child(even) {
+            padding-top: 3em;
+            transform:rotate(-5deg);
+        }
+
+        &:focus {
+            top: 40px;
+            left: 300px;
+            z-index: 1;
+            outline: none;
+        }
+    }
+}
+
+
+
+/* ********** End Module Sticky Note ********** */

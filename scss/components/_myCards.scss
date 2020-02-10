@@ -1,0 +1,79 @@
+/* --------------- Component Cards ----------- */
+
+// Author: Pieternel404
+// Date last changed: 27/01/2020
+    
+.myCard {
+	box-shadow: 0px 1px 3px rgba(0,0,0,.2);
+    position: relative;
+    background-color: #FFF;
+    height: 100%; // I need this because .myCard is inside the .myCol.
+
+    &__picture {
+        display: block;
+        overflow: hidden;
+    }
+    
+    &__img {
+        display: block;
+        height: 150px;
+        // Code for IE 10 / 11
+            margin: auto;
+        //
+        @supports (object-fit: cover) {
+            width: 100%;
+            object-fit: cover;
+        }
+        transition: transform .3s ease-out;
+    }
+
+    &__body {padding: 1em 1.6em 1.8em;}
+      
+    // Als .card__body niet het laatste child-element is, dan een padding toevoegen die ruimte biedt voor de linkButton. In feite is alleen de padding op het element met de meeste tekst belangrijk.
+    &__body:not(:last-child) {padding-bottom: 70px;}
+
+    &__pubDate,
+    &__pubSource {font: italic .9em/1.4em Arial, sans-serif;}
+
+    &__heading1 {
+        color: #D37A00;
+        font: bold 1.2em Arial, sans-serif;
+        margin-top: 1em;
+        margin-bottom: .3em
+    }
+    
+    &__heading2 { 
+        font: bold 1.2em Arial, sans-serif;
+        margin-top: 1em;
+    }
+    
+    &__bodyText.-intro {font-weight: bold;}
+    
+    &__bodyText {
+        font: normal 1em/1.5 Arial, sans-serif;
+        color: #333;
+    }
+    &__bodyText:not(:first-of-type) {margin-top: 1em;}
+     
+    &__buttonHolder {
+        padding: 0 1.6em 1.2em;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+// Card transitions 
+
+.myCard {
+    transition: box-shadow .3s ease-out;
+
+    &:hover {box-shadow: 0 10px 20px rgba(0,0,0,.3);} 
+    &:focus-within {box-shadow: 0 10px 20px rgba(0,0,0,.3);}
+
+    // Alleen afbeelding transformen 
+    &:hover &__img {transform: scale(1.05);}
+    &:focus-within &__img {transform: scale(1.05);}
+ } 
+
+// *****************************************

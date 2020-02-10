@@ -1,0 +1,70 @@
+/* ********** Module ServiceBlock List ********* */
+
+.serviceBlock {padding: 1em; font-size: 15px;}
+
+.colBox {
+	&__heading {
+		font: bold 1em/1 Arial, sans-serif;
+		margin-bottom: 10px;
+		color: $purple;
+	}
+	&__list {list-style: none;}
+
+	&__link,
+	&__span {
+		display: inline-block;
+		color: $purple;
+		font-family: Arial;
+		padding: 5px 5px 5px 20px;
+		line-height: 1.3;
+	}
+
+	&__link {
+		background: url("../img/arrow-right.png") -6px 4px/20px no-repeat;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {text-decoration: underline;}
+	}
+
+	&__span {padding-left: 0;}
+	
+	// dit aanpassen
+	.wrapper .serviceBlock &__bodyText {color: $purple;}
+}
+
+em {font-weight: bold;}
+
+.colBox__address {
+	font-style: normal;
+	margin-top: 1.5em;
+}
+
+.colBox__addressRow {
+	color: $purple;
+	font-family: Arial;
+	padding: 0px 5px 0px 0px;
+	line-height: 1.3;
+}
+
+.colBox__addressLabel {
+	display: inline-block;
+	color: $purple;
+	font-family: Arial;
+	font-weight: bold;
+	line-height: 1.3;
+}
+
+.colBox__addressLink {
+	color: $purple;
+	font-family: Arial;
+	text-decoration: none;
+}
+
+.colBox__addressLink:hover,
+.colBox__addressLink:focus {text-decoration: underline;}
+
+.colBox__addressRow {margin-top: 0.5em;}
+
+/* ********** End Module ServiceBlock List ********* */
+

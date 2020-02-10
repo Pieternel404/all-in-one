@@ -1,0 +1,51 @@
+/* --------------- Component Links and Buttons ----------- */
+
+// Author: Pieternel de Jonge
+// Date created: 28/01/2020
+// Date last changed: 28/01/2020
+
+/* ******* Text Link *********** */
+.textLink {
+    color: $color-txtlink;
+    text-decoration: none;
+    outline: none;
+
+    &[rel~="external"] {
+        padding-right: 14px;
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-image: linear-gradient(transparent,transparent),url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2212%22 height=%2212%22%3E %3Cpath fill=%22%23eeecec%22 stroke=%22%23C26900%22 d=%22M1.5 4.518h5.982V10.5H1.5z%22/%3E %3Cpath fill=%22%23C26900%22 d=%22M5.765 1H11v5.39L9.427 7.937l-1.31-1.31L5.393 9.35l-2.69-2.688 2.81-2.808L4.2 2.544z%22/%3E %3Cpath fill=%22%23eeecec%22 d=%22M9.995 2.004l.022 4.885L8.2 5.07 5.32 7.95 4.09 6.723l2.882-2.88-1.85-1.852z%22/%3E %3C/svg%3E");
+    }
+
+    &:hover {text-decoration: underline;}
+
+    &:focus {
+        background: #D37A00;
+        color: #F7F7F7;
+    }
+}
+
+/* ********** End Text Link ********** */
+
+/* ******* Button Link *********** */
+.buttonLink {
+    outline: none;
+    display: inline-block;
+    padding: 8px 12px;
+    border: 1px solid #D37A00;
+    background-color: #FFF;
+    color: #D37A00;
+    border-radius: 5px;
+    text-decoration: none;
+    font: bold 0.9375em Arial;
+    transition: all 1s;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: #E97B24;
+        border-color: #E97B24;
+        color: #FFF;
+    }
+}
+/* ********** End Button Link ********** */
