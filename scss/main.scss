@@ -4,9 +4,12 @@
 @import 'abstracts/variables';
 @import 'base/reset';
 
+@import "../node_modules/rfs/scss";
+@import 'partials/type';
+
 @import 'layout/structure';
 @import 'components/links-buttons';
-@import 'components/myCards';
+@import 'components/cards';
 @import 'components/smallNavigationLists';
 @import 'components/merkBeloften';
 @import 'components/footerLists';
@@ -82,12 +85,6 @@
   }
 }
 
-
-[class*=bodyText]  {
-	font: normal .9em/1.5 Arial;
-	color: #333;
-}
-
 /* --------------------------------- */
 
 body {background: #BBBCBC;}
@@ -117,10 +114,10 @@ body {background: #BBBCBC;}
     font: italic normal 1.2em/1.5 Arial;
     background: rgba(255, 255, 255, 0.5);
     background: #FCB825;
-    color: #333; }
+    color: #222; }
 
   #promo a {
-    color: #333; }
+    color: #222; }
 
   /* ********** START Module Slogan ********** */
   #slogan {
@@ -147,25 +144,25 @@ body {background: #BBBCBC;}
     grid-template-columns: 1fr 1fr 2fr 1.5fr; } 
     
 /* ---------------- MEDIA QUERY MENU SMALL (<= 900px) (Alleen ten behoeve van menu)--------------------------*/
-@media (max-width: 900px) {
-  header,
-  header::before {background: #EEECEC;}
+.pageHeader {filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.25)); }
 
-  header::before {
+
+@media (max-width: 900px) {
+  .pageHeader,
+  .pageHeader::before {background: #EEECEC;}
+
+  .pageHeader::before {
     background: linear-gradient(to bottom, #462662 0%, #462662 30px, #EEECEC 30px, #EEECEC 100%); }
 
-  header {
+  .pageHeader {
     background: linear-gradient(to bottom, #462662 0%, #462662 30px, #EEECEC 30px, #EEECEC 100%);
   }
-  header {filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.25)); }
   
-  header::after {
-//    @extend %positioned-pseudo-elements;
-content: "";
-z-index: $zindex-pseudo-element;
-position: absolute;
-
-
+  .pageHeader::after {
+    //    @extend %positioned-pseudo-elements;
+    content: "";
+    z-index: $zindex-pseudo-element;
+    position: absolute;
     bottom: -12px;
     left: 4px;
     width: 80px;
@@ -175,7 +172,7 @@ position: absolute;
     border-bottom-right-radius: 114px;
   }
   
-  header.wrapperRow {min-height: 85px; padding: 0;}
+  .pageHeader.wrapperRow {min-height: 85px; padding: 0;}
 
   @import 'components/mainNavVertical';
 
@@ -197,27 +194,25 @@ position: absolute;
 /* ---------------- MEDIA QUERY Main Navigation Horizontal --------------------------*/
 @media (min-width: 901px) {
 
-  header::before {
+  .pageHeader::before {
     background: linear-gradient(to bottom, #462662 0%, #462662 34px, #EEECEC 34px, #EEECEC 100%); }
 
-  header {
+  .pageHeader {
     background: linear-gradient(to bottom, #462662 0%, #462662 34px, #EEECEC 34px, #EEECEC 100%);
     padding: 0 1em;
     z-index: $zindex-dropdown; // Because of navigation-menu that drops over element following header element
     min-height: 127px;
   }
 
-  header {filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.25)); }
-  
-  header::after {
-
+ 
+  .pageHeader::after {
 // I can not use extends from outside the media-query
 // I have to re-structure this
 //    @extend %positioned-pseudo-elements;
     content: "";
     z-index: $zindex-pseudo-element;
     position: absolute;
-
+    bottom: -20px;
     left: 4px;
     width: 114px;
     height: 57px;
@@ -253,6 +248,7 @@ position: absolute;
 #quality::before {background: linear-gradient(to right, #ECDFF9 0%, #ECDFF9 50%, antiquewhite 50%, antiquewhite 100%); }
 
 .myCol3 > div {padding: 1em;}
+.myCol3:first-child {padding-left: 0;}
 
 .myContainer {padding: 1em 0;}
 

@@ -1,12 +1,14 @@
 // Horizontal
-.topList {
+// .topList
+.sNav {
+    &__list {
     display: flex;
     justify-content: flex-end;
     align-content: flex-end;
     font: normal .8em/1 Arial, sans-serif;
     height: 34px;
-
-    &__Item {
+}
+    &__item {
         list-style: none;
         margin-right: 20px;
 
@@ -14,7 +16,7 @@
 //        &:not(:last-child) {margin-right: 2em;}
     }
 
-    &__Link {
+    &__link {
         padding: 10px 5px 0;
         display: inline-block;
         color: #f7f7f7;

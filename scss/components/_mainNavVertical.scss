@@ -1,16 +1,16 @@
 /* --------------- Component Main Navigation Vertical ----------- */
 
-// mNav General
-.mNav {
-  font: normal 1em/1 Arial, sans-serif;
+// pNav General
+.pNav {
+  font: normal 1em/1 Questrial, sans-serif;
 }
 
 /* --------------------------------------- */
 
 // rules for button
-.mNav [hidden] {display: none;}
+.pNav [hidden] {display: none;}
 
-.mNav {
+.pNav {
   // button
   &__button {
     padding: 3px 1.5em 3px 0.5em;
@@ -27,24 +27,25 @@
 
 /* --------------------------------------- */
 
-// mNav topList elements
-.mNav {
+// pNav topList elements
+.pNav {
   // topList
   &__topList {padding: 97px 0 30px;}
   
   // topListItems
   &__topListItem {
     list-style: none;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #222;
     background-color: #cabdd7;
+    background-color: #DDDADA;
 
     // topListItem pseudo-classes
-    &:first-child {border-top: 1px solid #333;}
+    &:first-child {border-top: 1px solid #222;}
   }
 
   // topListLinks 
   &__topListLink {
-    color: #333;
+    color: #222;
     text-decoration: none;
     display: block;
     padding: 12px 10px 0px 0px;
@@ -80,13 +81,13 @@
 
 /* --------------------------------------- */
 
-// mNav subList elements
-.mNav {
+// pNav subList elements
+.pNav {
   // subListItem
   &__subListItem {list-style: none;}
 
   // subListItem pseudo-classes
-  &__subListItem:not(:last-child) {border-bottom: 1px dotted #333;}
+  &__subListItem:not(:last-child) {border-bottom: 1px dotted #222;}
 
   // subListLink
   &__subListLink {
@@ -94,7 +95,7 @@
     text-decoration: none;
     padding: 12px 10px 12px 0;
     background: #EEECEC;
-    color: #333;
+    color: #222;
 
     // subListLink pseudo-classes
     &:hover,

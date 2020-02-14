@@ -1,0 +1,31 @@
+//
+// Headings
+//
+
+
+
+[class*=bodyText]  {
+	font: normal 1em/1.5 Questrial;
+	color: #222;
+}
+
+
+.sectionGroup__heading, .card__headerHeading, .card__chapterHeading,
+h1, h2, h3, h4, h5, h6 {
+//  margin-bottom: $headings-margin-bottom;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+  color: #462662;
+  margin-bottom: .5em;
+}
+
+.sectionGroup__heading {@include font-size($h1-section-font-size);}
+.card__headerHeading {@include font-size($h1-element-font-size); color: #d37a00;}
+.card__chapterHeading, h2 {@include font-size($h2-font-size); color: #d37a00;}
+h3 { @include font-size($h3-font-size); }
+h4 { @include font-size($h4-font-size); }
+h5 { @include font-size($h5-font-size); }
+h6 { @include font-size($h6-font-size); }
+

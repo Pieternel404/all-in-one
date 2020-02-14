@@ -332,7 +332,7 @@ h6 {
           transform: scale(1.05);
 }
 
-.sNav__list {
+.topList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,16 +345,16 @@ h6 {
   height: 34px;
 }
 
-.sNav__item {
+.topList__Item {
   list-style: none;
   margin-right: 20px;
 }
 
-.sNav__item:hover {
+.topList__Item:hover {
   background: #cabdd7;
 }
 
-.sNav__link {
+.topList__Link {
   padding: 10px 5px 0;
   display: inline-block;
   color: #f7f7f7;
@@ -362,11 +362,11 @@ h6 {
   height: 100%;
 }
 
-.sNav__link:focus {
+.topList__Link:focus {
   outline: none;
 }
 
-.sNav__link:hover, .sNav__link:focus {
+.topList__Link:hover, .topList__Link:focus {
   text-decoration: underline;
   background-color: #eeecec;
   color: #462662;
@@ -2296,84 +2296,84 @@ body {
     padding: 0;
   }
   /* --------------- Component Main Navigation Vertical ----------- */
-  .pNav {
+  .mNav {
     font: normal 1em/1 Questrial, sans-serif;
   }
   /* --------------------------------------- */
-  .pNav [hidden] {
+  .mNav [hidden] {
     display: none;
   }
-  .pNav__button {
+  .mNav__button {
     padding: 3px 1.5em 3px 0.5em;
     border: 1px solid;
     position: absolute;
     right: 1em;
     top: 40px;
   }
-  .pNav__button:focus {
+  .mNav__button:focus {
     outline: none;
   }
   /* --------------------------------------- */
-  .pNav__topList {
+  .mNav__topList {
     padding: 97px 0 30px;
   }
-  .pNav__topListItem {
+  .mNav__topListItem {
     list-style: none;
     border-bottom: 1px solid #222;
     background-color: #cabdd7;
     background-color: #DDDADA;
   }
-  .pNav__topListItem:first-child {
+  .mNav__topListItem:first-child {
     border-top: 1px solid #222;
   }
-  .pNav__topListLink {
+  .mNav__topListLink {
     color: #222;
     text-decoration: none;
     display: block;
     padding: 12px 10px 0px 0px;
     /*    &:first-child:nth-last-child(2) {background: transparent url("../img/up_arrow.png") no-repeat right 10px center/1.5em;} */
   }
-  .pNav__topListLink:focus, .pNav__topListLink:hover {
+  .mNav__topListLink:focus, .mNav__topListLink:hover {
     outline: none;
     text-decoration: underline;
     background-color: #DDDADA;
   }
-  .pNav__topListLink:first-child:nth-last-child(2):hover, .pNav__topListLink:first-child:nth-last-child(2):focus {
+  .mNav__topListLink:first-child:nth-last-child(2):hover, .mNav__topListLink:first-child:nth-last-child(2):focus {
     background-color: #DDDADA;
   }
-  .pNav__topListLink.-noLink, .pNav__topListLink.-noLink:hover {
+  .mNav__topListLink.-noLink, .mNav__topListLink.-noLink:hover {
     text-decoration: none;
     color: #666;
   }
-  .pNav__topListSpan {
+  .mNav__topListSpan {
     padding: 0px 0px 12px 25px;
     display: block;
     background: transparent url("../img/arrow-right.png") no-repeat 5px -1px/1em;
   }
   /* --------------------------------------- */
-  .pNav__subListItem {
+  .mNav__subListItem {
     list-style: none;
   }
-  .pNav__subListItem:not(:last-child) {
+  .mNav__subListItem:not(:last-child) {
     border-bottom: 1px dotted #222;
   }
-  .pNav__subListLink {
+  .mNav__subListLink {
     display: block;
     text-decoration: none;
     padding: 12px 10px 12px 0;
     background: #EEECEC;
     color: #222;
   }
-  .pNav__subListLink:hover, .pNav__subListLink:focus {
+  .mNav__subListLink:hover, .mNav__subListLink:focus {
     background: #DDDADA;
     text-decoration: underline;
     outline: none;
   }
-  .pNav__subListLink.-noLink, .pNav__subListLink.-noLink:hover {
+  .mNav__subListLink.-noLink, .mNav__subListLink.-noLink:hover {
     text-decoration: none;
     color: #666;
   }
-  .pNav__subListSpan {
+  .mNav__subListSpan {
     padding-left: 40px;
     display: block;
     background: transparent url("../img/arrow-right.png") no-repeat 20px -1px/1em;
@@ -2503,7 +2503,7 @@ body {
   /* --------------- End Component Logo ----------- */
   /* --------------- Component Main Navigation Horizontal ----------- */
   /* ******* Toplist (ul) *********** */
-  .pNav {
+  .mNav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2521,20 +2521,20 @@ body {
     right: 1em;
     bottom: -1px;
   }
-  .pNav [hidden] {
+  .mNav [hidden] {
     display: none;
   }
-  .pNav__button {
+  .mNav__button {
     padding: 3px 1.5em 3px 0.5em;
     background-color: aqua;
     border: 1px solid;
     display: none;
   }
-  .pNav__button:focus {
+  .mNav__button:focus {
     background-color: orangered;
     outline: none;
   }
-  .pNav__topList {
+  .mNav__topList {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2543,76 +2543,76 @@ body {
     font: normal 1.05em/1 Questrial, sans-serif;
     padding: 0 .3em;
   }
-  .pNav__topList:focus-within {
+  .mNav__topList:focus-within {
     border-color: #333333;
   }
-  .pNav__topList:hover, .pNav__topList:focus {
+  .mNav__topList:hover, .mNav__topList:focus {
     border-color: #333333;
   }
-  .pNav__topListItem {
+  .mNav__topListItem {
     list-style: none;
     padding: 0px;
   }
-  .pNav__topListItem:not(:first-child) {
+  .mNav__topListItem:not(:first-child) {
     margin-left: 1em;
   }
-  .pNav__topListLink {
+  .mNav__topListLink {
     display: block;
     color: #333333;
     text-decoration: none;
     padding: 0px 0.5em;
   }
-  .pNav__topListLink.-noLink {
+  .mNav__topListLink.-noLink {
     text-decoration: none;
     color: #999999;
   }
-  .pNav__topListLink:focus, .pNav__topListLink:hover {
+  .mNav__topListLink:focus, .mNav__topListLink:hover {
     outline: none;
     text-decoration: underline;
   }
-  .pNav__topListLink:not(:only-child) {
+  .mNav__topListLink:not(:only-child) {
     padding-right: 1.5em;
     background: transparent url("../img/dropdown_arrow.png") no-repeat right center/1.5em;
   }
-  .pNav__topListItem:focus-within .pNav__topListLink:not(:only-child) {
+  .mNav__topListItem:focus-within .mNav__topListLink:not(:only-child) {
     background-image: url("../img/up_arrow.png");
   }
-  .pNav__topListItem:focus .pNav__topListLink:not(:only-child),
-  .pNav__topList:hover .pNav__topListItem:not(:hover) .pNav__topListLink:not(:only-child) {
+  .mNav__topListItem:focus .mNav__topListLink:not(:only-child),
+  .mNav__topList:hover .mNav__topListItem:not(:hover) .mNav__topListLink:not(:only-child) {
     background-image: url("../img/dropdown_arrow.png");
   }
-  .pNav__topListSpan {
+  .mNav__topListSpan {
     padding: 7px 0 10px;
     border-top: 3px solid #eeecec;
     display: inline-block;
   }
-  .pNav__topListLink:focus > .pNav__topListSpan {
+  .mNav__topListLink:focus > .mNav__topListSpan {
     border-top-color: #333333;
   }
-  .pNav__topListLink:hover:not(:focus-within) > .pNav__topListSpan {
+  .mNav__topListLink:hover:not(:focus-within) > .mNav__topListSpan {
     border-top-color: #333333;
   }
-  .pNav__topListLink:hover:not(:focus) > .pNav__topListSpan {
+  .mNav__topListLink:hover:not(:focus) > .mNav__topListSpan {
     border-top-color: #333333;
   }
-  .pNav__topListLink.-noLink:hover > .pNav__topListSpan {
+  .mNav__topListLink.-noLink:hover > .mNav__topListSpan {
     border-top-color: #CCC;
   }
-  .pNav__topListLink.-noLink:focus > .pNav__topListSpan {
+  .mNav__topListLink.-noLink:focus > .mNav__topListSpan {
     border-top-color: #CCC;
   }
-  .pNav__topList:hover .pNav__topListLink:not(:hover) .pNav__topListSpan {
+  .mNav__topList:hover .mNav__topListLink:not(:hover) .mNav__topListSpan {
     border-top-color: #eeecec;
   }
   /* *************** Object ARROW *************** */
-  .pNav__topListItem:focus-within .pNav__topListLink:not(:only-child) {
+  .mNav__topListItem:focus-within .mNav__topListLink:not(:only-child) {
     position: relative;
   }
-  .pNav__topListItem:hover .pNav__topListLink:not(:only-child) {
+  .mNav__topListItem:hover .mNav__topListLink:not(:only-child) {
     position: relative;
   }
-  .pNav__topListItem:focus-within .pNav__topListLink:not(:only-child)::after,
-  .pNav__topListItem:focus-within .pNav__topListLink:not(:only-child)::before {
+  .mNav__topListItem:focus-within .mNav__topListLink:not(:only-child)::after,
+  .mNav__topListItem:focus-within .mNav__topListLink:not(:only-child)::before {
     content: "";
     z-index: 1;
     position: absolute;
@@ -2623,8 +2623,8 @@ body {
     width: 0;
     pointer-events: none;
   }
-  .pNav__topListItem:hover .pNav__topListLink:not(:only-child)::after,
-  .pNav__topListItem:hover .pNav__topListLink:not(:only-child)::before {
+  .mNav__topListItem:hover .mNav__topListLink:not(:only-child)::after,
+  .mNav__topListItem:hover .mNav__topListLink:not(:only-child)::before {
     z-index: 1;
     top: 100%;
     left: 50%;
@@ -2635,36 +2635,36 @@ body {
     position: absolute;
     pointer-events: none;
   }
-  .pNav__topListItem:focus-within .pNav__topListLink:not(:only-child)::after {
+  .mNav__topListItem:focus-within .mNav__topListLink:not(:only-child)::after {
     border-color: rgba(193, 177, 214, 0);
     border-top-color: #eeecec;
     border-width: 15px;
     margin-left: -15px;
   }
-  .pNav__topListItem:hover .pNav__topListLink:not(:only-child)::after {
+  .mNav__topListItem:hover .mNav__topListLink:not(:only-child)::after {
     border-color: rgba(193, 177, 214, 0);
     border-top-color: #eeecec;
     border-width: 15px;
     margin-left: -15px;
   }
-  .pNav__topListItem:focus-within .pNav__topListLink:not(:only-child)::before {
+  .mNav__topListItem:focus-within .mNav__topListLink:not(:only-child)::before {
     border-color: rgba(0, 0, 0, 0);
     border-top-color: #333333;
     border-width: 16px;
     margin-left: -16px;
   }
-  .pNav__topListItem:hover .pNav__topListLink:not(:only-child)::before {
+  .mNav__topListItem:hover .mNav__topListLink:not(:only-child)::before {
     border-color: rgba(0, 0, 0, 0);
     border-top-color: #333333;
     border-width: 16px;
     margin-left: -16px;
   }
-  .pNav__topList:hover .pNav__topListItem:not(:hover) .pNav__topListLink:not(:only-child)::before,
-  .pNav__topList:hover .pNav__topListItem:not(:hover) .pNav__topListLink:not(:only-child)::after {
+  .mNav__topList:hover .mNav__topListItem:not(:hover) .mNav__topListLink:not(:only-child)::before,
+  .mNav__topList:hover .mNav__topListItem:not(:hover) .mNav__topListLink:not(:only-child)::after {
     content: none;
   }
   /* ********** End Object ARROW ********** */
-  .pNav__subList {
+  .mNav__subList {
     background: #eeecec;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -2681,64 +2681,64 @@ body {
     padding: 20px 0;
     border-radius: 0 0 10px 10px;
   }
-  .pNav__topList:hover > .pNav__topListItem:not(:hover) .pNav__subList {
+  .mNav__topList:hover > .mNav__topListItem:not(:hover) .mNav__subList {
     left: -200vw;
   }
-  .pNav__topListItem:focus-within .pNav__subList {
+  .mNav__topListItem:focus-within .mNav__subList {
     left: -1px;
   }
-  .pNav__topListItem:hover .pNav__subList {
+  .mNav__topListItem:hover .mNav__subList {
     left: -1px;
   }
-  .pNav__subListItem {
+  .mNav__subListItem {
     list-style: none;
   }
-  .pNav__subListItem:not(:last-of-type) {
+  .mNav__subListItem:not(:last-of-type) {
     border-bottom: 1px dotted #333333;
   }
-  .pNav__topListItem:hover .pNav__topListLink:not(:only-child) {
+  .mNav__topListItem:hover .mNav__topListLink:not(:only-child) {
     background-image: url("../img/up_arrow.png");
   }
-  .pNav__subListLink {
+  .mNav__subListLink {
     display: block;
     padding: 7px 0;
     text-decoration: none;
   }
-  .pNav__subListLink:hover, .pNav__subListLink:focus {
+  .mNav__subListLink:hover, .mNav__subListLink:focus {
     background: #dddada;
     text-decoration: underline;
     -webkit-text-decoration-color: #333333;
             text-decoration-color: #333333;
   }
-  .pNav__subListLink:hover, .pNav__subListLink:focus, .pNav__subListLink.-noLink:hover, .pNav__subListLink.-noLink:focus {
+  .mNav__subListLink:hover, .mNav__subListLink:focus, .mNav__subListLink.-noLink:hover, .mNav__subListLink.-noLink:focus {
     outline: none;
   }
-  .pNav__subListLink.-noLink {
+  .mNav__subListLink.-noLink {
     text-decoration: none;
   }
-  .pNav__topList:hover .pNav__subListLink:not(:hover),
-  .pNav__subList:hover .pNav__subListLink:not(:hover) {
+  .mNav__topList:hover .mNav__subListLink:not(:hover),
+  .mNav__subList:hover .mNav__subListLink:not(:hover) {
     background-color: #eeecec;
     text-decoration: none;
   }
-  .pNav__subListSpan {
+  .mNav__subListSpan {
     padding: 0 10px 0 40px;
     display: block;
     background: transparent url("../img/arrow-right.png") no-repeat 8px 1px/1em;
     color: #333333;
   }
-  .pNav__subListLink.-noLink .pNav__subListSpan {
+  .mNav__subListLink.-noLink .mNav__subListSpan {
     background: none;
     color: #999999;
   }
-  .pNav__subListLink:hover .pNav__subListSpan,
-  .pNav__subListLink:focus .pNav__subListSpan {
+  .mNav__subListLink:hover .mNav__subListSpan,
+  .mNav__subListLink:focus .mNav__subListSpan {
     background-position: 20px 1px;
     -webkit-transition: background-position 0.3s ease;
     transition: background-position 0.3s ease;
   }
-  .pNav__topList:hover .pNav__subListLink:not(:hover) .pNav__subListSpan,
-  .pNav__subList:hover .pNav__subListLink:not(:hover) .pNav__subListSpan {
+  .mNav__topList:hover .mNav__subListLink:not(:hover) .mNav__subListSpan,
+  .mNav__subList:hover .mNav__subListLink:not(:hover) .mNav__subListSpan {
     background-position: 8px 1px;
   }
   /* --------------- End Component - Horizontal Main Navigation ----------- */

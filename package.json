@@ -1,0 +1,22 @@
+{
+  "name": "all-in-one",
+  "version": "1.0.0",
+  "description": "Collection\r Just testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pieternel404/all-in-one.git"
+  },
+  "author": "Pieternel404",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pieternel404/all-in-one/issues"
+  },
+  "homepage": "https://github.com/Pieternel404/all-in-one#readme",
+  "dependencies": {
+    "rfs": "^9.0.2"
+  }
+}
