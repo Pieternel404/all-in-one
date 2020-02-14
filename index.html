@@ -30,7 +30,7 @@
 	<style type="text/css">
 	/* Temporary styles */
 	.breadCrumb li {background-color: orange;}
-	.breadCrumb a:focus {background-color: paleturquoise; outline: none;}
+	.breadCrumb a:focus, .breadCrumb a:hover {background-color: paleturquoise; outline: none;}
 	.breadCrumb li + li::before {
     display: inline-block;
     margin: 0 0.25em;
@@ -43,7 +43,7 @@
 
 <body>
 <!-- <div class="wrapper" tabindex="-1" style="outline: none;"> -->
-<header  class="wrapper">
+<header  class="wrapper" tabindex="-1">
 
 	<div class="pageHeader wrapperRow">
 	
@@ -81,7 +81,7 @@
 					</span>
 				</li>
 				<li class="pNav__topListItem">
-					<a class="pNav__topListLink" href="specialismen.html">
+					<a class="pNav__topListLink" href="#">
 						<span class="pNav__topListSpan">Topnav two</span>
 					</a>
 					<ul class="pNav__subList">
@@ -91,7 +91,7 @@
 							</a>
 						</li>
 						<li class="pNav__subListItem">
-							<a class="pNav__subListLink" href="https://www.nos.nl/">
+							<a class="pNav__subListLink" href="#">
 								<span class="pNav__subListSpan">Subnavigation item two.two</span>
 							</a>
 						</li>
@@ -181,23 +181,23 @@
 			<ol style="list-style-type: none; display: flex;">
 			  <li class="breadCrumb__item">
 				<a class="breadCrumb__link" href="#">
-				  WAI-ARIA Authoring Practices
+				  Page-level1
 				</a>
 			  </li>
 			  <li class="breadCrumb__item">
 				<a class="breadCrumb__link" href="#">
-				  Design Patterns
+				  Page-level2
 				</a>
 			  </li>
 			  <li class="breadCrumb__item">
 				<a class="breadCrumb__link" href="#">
-				  Breadcrumb Pattern
+				  Page-level3
 				</a>
 			  </li>
 			  <li class="breadCrumb__item">
 <!-- I would like to change the <a> element into a <span> element. I dont´t know if this is good practice, considering Aria. -->
 				<a class="breadCrumb__link" href="index.html" aria-current="page">
-				  Breadcrumb Example
+				  Current-page
 				</a>
 			  </li>
 			</ol>
@@ -232,7 +232,7 @@
 			<div class="myCol2">
 				<div class="merkBelofte">
 					<div class="merkBelofte__body">
-						<h1 class="merkBelofte__heading1">Dedicated</h1>
+						<h1 class="merkBelofte__heading1">Collaborative</h1>
 						<p class="merkBelofte__bodyText">Sed blandit, mi sit amet porttitor rhoncus, sem nisi mollis elit, at sodales leo nulla sed nibh.</p>
 					</div>
 				</div>
@@ -270,7 +270,7 @@
 							<source srcset="img/squirrel.png" media="(min-width: 0px)">
 							<img src="img/squirrel.png" alt="Picture of a squirrel.">
 						</picture>
-						<p class="quality__bodyText">Vestibulum sagittis laoreet accumsan. Aliquam erat volutpat. Sed dictum est a diam molestie, sed consectetur metus ultricies. Ut sollicitudin aliquam vulputate. Curabitur <a rel="external" class="textLink" href="https://www.glassbox.nl/index.html">pulvinar nulla eget</a> urna ornare, vitae feugiat nunc pharetra.</p class="quality__bodyText">
+						<p class="quality__bodyText">Vestibulum sagittis laoreet accumsan. Aliquam erat volutpat. Sed dictum est a diam molestie, sed consectetur metus ultricies. Ut sollicitudin aliquam vulputate. Curabitur <a rel="external" class="textLink" href="#">pulvinar nulla eget</a> urna ornare, vitae feugiat nunc pharetra.</p class="quality__bodyText">
 						<p class="quality__bodyText">Phasellus id nisl ante. Sed blandit, mi sit amet porttitor rhoncus, sem nisi mollis elit, at sodales leo nulla sed nibh. Maecenas auctor imperdiet neque, a viverra dolor vestibulum quis.</p>
 						<p class="quality__bodyText">Donec eget lorem aliquet, volutpat ante non, elementum justo. Nulla tempus orci vel diam luctus, eleifend fringilla ipsum porttitor. Phasellus vehicula euismod tortor at pharetra.</p>
 					</div>
