@@ -27,18 +27,6 @@
 		});
 	});
 	</script>
-	<style type="text/css">
-	/* Temporary styles */
-	.breadCrumb li {background-color: orange;}
-	.breadCrumb a:focus, .breadCrumb a:hover {background-color: paleturquoise; outline: none;}
-	.breadCrumb li + li::before {
-    display: inline-block;
-    margin: 0 0.25em;
-    transform: rotate(15deg);
-    border-right: 0.1em solid black;
-	height: 0.8em;
-    content: '';}
-	</style>
 </head>
 
 <body>
@@ -177,6 +165,7 @@
 	</div>
 
 	<div id="banner" class="wrapperRow">
+		<h1>Breadcrumb -> Under construction</h1>
 		<nav aria-label="breadcrumb" class="breadCrumb">
 			<ol style="list-style-type: none; display: flex;">
 			  <li class="breadCrumb__item">
@@ -210,7 +199,7 @@
 	
 	<div id="brandPositioning" class="wrapperRow">
 		<section aria-labelledby="acc-brandHeading" class="myContainer sectionGroup">
-			<h1 class="sectionGroup__heading" id="acc-brandHeading">Our strong points</h1>
+			<h1 class="sectionGroup__heading" id="acc-brandHeading">Pieternel404's strong points</h1>
 			<p style="margin-bottom: 1.5em;">Our strong points are the qualities that characterise our company, making us substantially different from our direct competitors.</p>
 			<div id="merkBeloften" class="myRow">
 			<div class="myCol2">
@@ -247,6 +236,36 @@
 			</div>
 			</div>
 		</section>
+	</div>
+
+
+<!--	https://www.w3.org/TR/wai-aria-practices/examples/tabs/tabs-1/tabs.html	-->
+<!--	https://inclusive-components.design/tabbed-interfaces/	-->
+	<div class="wrapperRow" id="certificates">
+	<section class="sectionGroup myContainer" aria-labelledby="acc-certificates">
+	<h1 class="sectionGroup__heading" id="acc-certificates">Tabbed interface -> Under construction</h1>
+	
+	<ul role="tablist">  
+		<li role="presentation">
+		  <a role="tab" href="#section1" id="tab1" aria-selected="true">Section 1</a>
+		</li>
+		<li role="presentation">
+		  <a role="tab" href="#section2" id="tab2">Section 2</a>
+		</li>
+		<li role="presentation">
+		   <a role="tab" href="#section3" id="tab3">Section 3</a>
+		</li>
+	  </ul>  
+	  <section role="tabpanel" id="section1" aria-labelledby="tab1">  
+		<p class="quality__bodyText">Praesent tincidunt lacus non magna sagittis, ac rhoncus metus molestie. Morbi ut mi quis arcu molestie tempor. Donec facilisis tempus tortor, ac consectetur ante interdum et. Vivamus ut orci et dui rhoncus lacinia porta sit amet justo. Cras tincidunt justo nec ligula volutpat, non molestie lorem lacinia.</p>
+	  </section>  
+	  <section role="tabpanel" id="section2" aria-labelledby="tab2" hidden>  
+		<p class="quality__bodyText">Praesent tincidunt lacus non magna sagittis, ac rhoncus metus molestie. Morbi ut mi quis arcu molestie tempor. Donec facilisis tempus tortor, ac consectetur ante interdum et. Vivamus ut orci et dui rhoncus lacinia porta sit amet justo. Cras tincidunt justo nec ligula volutpat, non molestie lorem lacinia.</p>
+	  </section>  
+	  <section role="tabpanel" id="section3" aria-labelledby="tab3" hidden>  
+		<p class="quality__bodyText">Praesent tincidunt lacus non magna sagittis, ac rhoncus metus molestie. Morbi ut mi quis arcu molestie tempor. Donec facilisis tempus tortor, ac consectetur ante interdum et. Vivamus ut orci et dui rhoncus lacinia porta sit amet justo. Cras tincidunt justo nec ligula volutpat, non molestie lorem lacinia.</p>
+	  </section>
+	</section>
 	</div>
 
 	<div id="quality" class="wrapperRow">
@@ -478,6 +497,36 @@
 				</div>
 			</div>
 
+			<div class="infoColumn">
+				<h3 class="colBox__heading">Get in touch</h3>
+					<form class="contactForm" aria-label="Contact information">
+						<div class="contactForm__row">
+							<label class="contactForm__label" for="name">naam</label>
+							<input type="text" id="name" name="user" placeholder="voor- en achternaam" "required" />  	
+						</div>
+	
+						<div class="contactForm__row">
+							<label class="contactForm__label" for="mail">e-mail</label>
+							<input type="email" id="mail" name="user_email" "required" />
+						</div>
+		  
+						<div class="contactForm__row">
+							<label class="contactForm__label" for="telefoon">telefoon</label>
+							<input type="text" id="telefoon" name="user_telephone" placeholder="telefoonnummer" "required" pattern="0[0-9]{9}" />
+						</div>
+		  
+						<div class="contactForm__row">
+							<label class="contactForm__label" for="msg">uw vraag</label>
+							<textarea id="msg" name="user_message"></textarea>
+						</div>
+		 
+						<div class="contactForm__row submitRow">
+							<button type="submit">Verzend bericht</button>
+						</div>
+					</form>
+				</div> 
+				
+<!--
 			<div class="myCol4">
 				<div class="infoColumn colBox footerContact">
 					<h3 class="colBox__heading">Get in touch!</h3>
@@ -497,7 +546,7 @@
 					</address>
 				</div>
 			</div>
-
+-->
 		</div>	<!-- END serviceBlock -->
 		</div>	<!--	END topFooter	-->
 

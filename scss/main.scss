@@ -4,10 +4,14 @@
 @import 'abstracts/variables';
 @import 'base/reset';
 
+@import 'temp';
+
 @import "../node_modules/rfs/scss";
+
 @import 'partials/type';
 
 @import 'layout/structure';
+
 @import 'components/links-buttons';
 @import 'components/cards';
 @import 'components/smallNavigationLists';
@@ -234,6 +238,9 @@ body {background: #BBBCBC;}
 
 #articles::before {background: $maincolor-bg2;}
 #articles {background: $maincolor-bg2;}
+
+#certificates::before {background: $maincolor-bg2;}
+#certificates {background: $maincolor-bg2;}
 
 #brandPositioning::before {background: #f7f7f7;}
 #brandPositioning {background: #f7f7f7;}

@@ -1,0 +1,197 @@
+/* Temporary styles: under construction */
+/*	Tabbed list	*/
+#certificates section section:not(:target) {display: none;}
+
+[role="tablist"] {
+  padding: 0;
+}
+
+[role="tablist"] li,
+[role="tablist"] a {
+  display: inline-block;
+}
+
+[role="tablist"] a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0.5rem 1em;
+}
+
+[role="tablist"] [aria-selected] {
+  border: 2px solid;
+  background: #fff;
+  border-bottom: 0;
+  position: relative;
+  top: 2px;
+}
+
+[role="tabpanel"] {
+  border: 2px solid;
+  padding: 1.5rem;
+}
+
+[role="tabpanel"] *+* {
+  margin-top: 0.75rem;
+}
+
+*:focus {
+  outline: 2px solid transparent;
+  /* ↑ for WHCM users */
+  box-shadow: inset 0 0 0 4px lightBlue;
+}
+
+@media (max-width: 550px) {
+
+  [role="tablist"] li,
+  [role="tablist"] a {
+    display: block;
+    position: static;
+  }
+
+  [role="tablist"] a {
+    border: 2px solid #222 !important;
+  }
+
+  [role="tablist"] li+li a {
+    border-top: 0 !important;
+  }
+
+  [role="tablist"] [aria-selected] {
+    position: static;
+  }
+
+  [role="tablist"] [aria-selected]::after {
+    content: '\0020⬅';
+  }
+
+  [role="tabpanel"] {
+    border-top: 0;
+  }
+
+}
+
+/*	Breadcrumb	*/
+
+.breadCrumb li {background-color: orange;}
+.breadCrumb a:focus, .breadCrumb a:hover {background-color: paleturquoise; outline: none;}
+.breadCrumb li + li::before {
+display: inline-block;
+margin: 0 0.25em;
+transform: rotate(15deg);
+border-right: 0.1em solid black;
+height: 0.8em;
+content: '';}
+
+/* ********** Module ContactForm ********** */
+
+/*	https://css-tricks.com/snippets/css/change-autocomplete-styles-webkit-browsers/	*/
+/*	https://www.quackit.com/css/flexbox/tutorial/align_form_elements_with_flexbox.cfm	*/
+
+
+.contactForm {
+display: flex;
+flex-direction: column;
+margin-top: 10px;	
+}
+
+.contactForm__row {
+display: flex;
+margin-bottom: 5px;
+}
+
+.contactForm__label {
+flex: 1;
+padding: 7px 10px;
+border-top: 1px solid #462662;
+border-bottom: 1px solid #462662;
+border-left: 1px solid #462662;
+background-color: transparent;
+color: #462662;
+font: bold 1em/1 Arial, sans-serif;
+cursor: pointer;
+}
+
+.contactForm__label:hover {text-decoration: underline;}
+
+.contactForm input,
+.contactForm textarea {
+flex: 2;
+padding: 7px 10px;
+border: 1px solid #462662;
+border-left-style: dotted;
+background-color: transparent;
+color: #462662;
+font: normal 1em/1 Arial, sans-serif;
+border-radius: 0px;
+resize: vertical;
+}
+
+.contactForm input:hover,
+.contactForm textarea:hover,
+.contactForm input:focus,
+.contactForm textarea:focus {background: lavender;}
+
+.contactForm:focus-within input,
+.contactForm:focus-within textarea {background: lavender;}
+
+.contactForm:focus input,
+.contactForm:focus textarea,
+.contactForm:hover input,
+.contactForm:hover textarea {background: lavender;}
+
+
+.contactForm:focus-within label {
+background: #F0E1BA;
+color: #462662;
+}
+.contactForm:hover label {
+background: #F0E1BA;
+color: #462662;
+}
+
+.contactForm input {color: #462662}
+
+.contactForm input::placeholder {color: black;}
+.contactForm input:focus::placeholder {color: transparent;}
+
+.contactForm input:invalid {
+box-shadow: 0px 2px 15px 0 rgba(255,0,0,.4);	
+border: 1px solid red;
+color: red;
+}
+
+.contactForm input:focus:invalid {
+box-shadow: none;
+border: 1px solid #462662;
+border-left-style: dotted;
+color: #462662;
+}
+/*
+.contactForm .submitRow {
+display: grid;
+grid-template-columns: 1fr; 
+}
+*/
+.contactForm:focus-within .submitRow {
+background: #462662;
+color: #D37A00;
+}
+
+.contactForm button {
+padding: 10px;
+font: bold 1em/1 Arial, sans-serif;
+cursor: pointer;
+background:#D37A00; 
+color: #462662;
+border: 1px solid #462662;
+border-radius: 3px;
+transition: all 0.5s;
+}
+
+.contactForm button:hover,
+.contactForm button:focus {
+background: #462662;
+color: #F59C00;
+}
+
+/* ********** End Module ContactForm ********** */
